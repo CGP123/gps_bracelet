@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DeviceActivity">
+
+    <ImageView
+        android:id="@+id/IV_employeePhoto"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/img_9935"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TV_fullName"
+        android:layout_width="500dp"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:text="ФИО: Попов Максим Алексеевич"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TV_trackerStatus" />
+
+    <TextView
+        android:id="@+id/TV_trackerStatus"
+        android:layout_width="500dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IV_employeePhoto" />
+
+    <TextView
+        android:id="@+id/TV_heartRate"
+        android:layout_width="500dp"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:text="Пульс:"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TV_fullName" />
+
+    <TextView
+        android:id="@+id/TV_steps"
+        android:layout_width="500dp"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:text="Количество шагов:"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TV_heartRate" />
+</androidx.constraintlayout.widget.ConstraintLayout>

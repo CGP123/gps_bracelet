@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">GPS браслет</string>
+    <string name="make_signal">Подать сигнал</string>
+</resources>
